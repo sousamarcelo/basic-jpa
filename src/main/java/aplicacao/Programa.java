@@ -49,9 +49,7 @@ public class Programa {
 		em.getTransaction().begin();
 		em.remove(p); //depois sim pode apaga-la porque ela ainda está monitora, a conexão do em e emf ainda está aberta
 		em.getTransaction().commit();
-		
-		
-		
+				
 		System.out.println("Pronto!");
 		//fechando os objetos necessarios
 		em.clear(); //fechando o "EntityManager" depois de utilizalo
